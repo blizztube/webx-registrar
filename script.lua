@@ -14,7 +14,7 @@ local result = get("result")
 
 coroutine.wrap(function()
     local res = fetch({
-        url = "https://api.buss.lol/tlds",
+        url = "https://minimapper.neocities.org/tlds.json",
         method = "GET",
         headers = { ["Content-Type"] = "application/json" },
     })
@@ -37,7 +37,7 @@ function fetch_dns()
 
     print(body)
     local res = fetch({
-        url = "https://api.buss.lol/domain",
+        url = "url",
         method = "POST",
         headers = { ["Content-Type"] = "application/json" },
         body = body,
